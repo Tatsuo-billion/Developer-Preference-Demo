@@ -1,6 +1,7 @@
 package co.billionlabs.developerpreferencedemo
 
 import android.content.pm.ActivityInfo
+import android.graphics.Color
 import android.util.Log
 
 /**
@@ -19,6 +20,18 @@ object DeveloperConfig {
             "landscape" -> ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
             "reverse_landscape" -> ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
             else -> ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+        }
+    }
+
+    fun getFavoriteColor(): Int {
+        return when (BuildConfig.FAVORITE_COLOR) {
+            "GREEN" -> Color.GREEN
+            "BLUE" -> Color.BLUE
+            "RED" -> Color.RED
+            "YELLOW" -> Color.YELLOW
+            "CYAN" -> Color.CYAN
+            "MAGENTA" -> Color.MAGENTA
+            else -> Color.WHITE
         }
     }
 

@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         val mainLayout = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(24, 24, 24, 24)
-            setBackgroundColor(Color.WHITE)
+            setBackgroundColor(DeveloperConfig.getFavoriteColor())
         }
 
         // Add title

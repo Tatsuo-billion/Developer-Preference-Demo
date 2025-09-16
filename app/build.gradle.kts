@@ -26,6 +26,7 @@ android {
             // Tatsuo's developer preferences
             buildConfigField("Boolean", "SKIP_TUTORIALS", "false")
             buildConfigField("String", "PREFERRED_ORIENTATION", "\"portrait\"")
+            buildConfigField("String", "FAVORITE_COLOR", "\"GREEN\"")
             buildConfigField("String", "AWS_BUCKET", "\"tatsuo-dev-bucket\"")
             buildConfigField("String", "PYTHON_PATH", "\"/usr/local/bin/python3\"")
         }
@@ -38,6 +39,7 @@ android {
             // Colin's developer preferences
             buildConfigField("Boolean", "SKIP_TUTORIALS", "true")
             buildConfigField("String", "PREFERRED_ORIENTATION", "\"portrait\"")
+            buildConfigField("String", "FAVORITE_COLOR", "\"BLUE\"")
             buildConfigField("String", "AWS_BUCKET", "\"colin-dev-bucket\"")
             buildConfigField("String", "PYTHON_PATH", "\"/opt/homebrew/bin/python3\"")
         }
